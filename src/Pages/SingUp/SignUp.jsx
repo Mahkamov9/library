@@ -76,9 +76,9 @@ console.log(response)
         <input type="text" name="secret" value={formData.secret} onChange={handleChange} />
       </label>
       <br />
-      <Link to="/signin">
+      {/* <Link to="/signin"> */}
       <button type="submit">Register</button>
-      </Link>
+      {/* </Link> */}
     </form>
   );
 };
