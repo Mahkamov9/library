@@ -1,0 +1,57 @@
+.navbar{
+    padding-top: 10px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.nav_box{
+    display: flex;
+    align-items: center;
+}
+
+.nav_input{
+    margin-left: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    width: 380px;
+    height: 48px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav_input_box{
+    position: relative;
+}
+
+.search_btn{
+    position: absolute;
+    top: 13px;
+    left: 30px;
+}
+
+.close_btn{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.noti{
+
+}
+
+.pro{
+    border-radius: 50%;
+}
+
+.proo{
+    margin-left: 20px;
+}
+
+.title_text{
+    font-size: 20px;
+}
