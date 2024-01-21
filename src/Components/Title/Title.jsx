@@ -4,19 +4,22 @@ import plus from "../../Assets/Images/plus.svg";
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import TextField from '@mui/material/TextField';
+import Grid from '@mui/material/Grid';
+
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: '#fff',
-  radius: '15px',
-  boxShadow: 24,
-  p: 4,
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: '#fff',
+    radius: '15px',
+    boxShadow: 24,
+    p: 4,
 };
 
 
@@ -41,12 +44,25 @@ export default function Title() {
                     aria-describedby="modal-modal-description"
                 >
                     <Box sx={style}>
-                        <Typography id="modal-modal-title" variant="h6" component="h2">
-                            Text in a modal
-                        </Typography>
-                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                        </Typography>
+                        <h1>Create new book</h1>
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} sm={12}>
+                                <TextField
+                                    autoComplete="655651321321"
+                                    name="isbn"
+                                    required
+                                    fullWidth
+                                    id="isbn"
+                                    label="Isbn"
+                                    autoFocus
+                                />
+                            </Grid>
+                        </Grid>
+                        <Grid className='modal_btn'>
+                            {/* <Button variant='contained' color='error' sm={6}>Close</Button> */}
+                            <Button variant='contained' sm={6} >Create</Button>
+                        </Grid>
+
                     </Box>
                 </Modal>
             </div>

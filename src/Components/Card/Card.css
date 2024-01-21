@@ -1,6 +1,6 @@
 .card{
     width: 400px;
-    height: 214px;
+    /* height: 214px; */
     background-color: #FEFEFE;
     padding: 15px;
     margin: 5px;
@@ -13,9 +13,10 @@
     line-height: 0px;
 }
 
-.card_item{
+.card .card_box .card_item {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px !important;
 }
 
 .status{
@@ -29,4 +30,3 @@
 .card_box h3{
     font-weight: bold;
 }
-
